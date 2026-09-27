@@ -15,7 +15,8 @@ const bankAccount = {
 bankAccount.deposit();
 bankAccount.withdraw();
 console.log(bankAccount);
-
+const { ownerName, accountNumber, balance } = bankAccount;
+console.log(bankAccount);
 // Завдання 2
 let weather = {
   temperature: prompt("Введіть температуру:"),
@@ -31,6 +32,8 @@ let weather = {
     }
   },
 };
+const { temperature, humidity, windSpeed } = weather;
+console.log(weather);
 weather.temperatureLow();
 console.log(`Температура: ${weather.temperature} C`);
 console.log(`Частота: ${weather.humidity}`);
@@ -57,6 +60,7 @@ user.login();
 console.log(`Ім'я: ${user.name}`);
 console.log(`Пошта: ${user.email}`);
 console.log(`Пароль: ${user.password}`);
+const { name, email, password } = user;
 // Завдання 4
 const movie = {
   title: prompt("Введіть Кіно"),
@@ -76,3 +80,4 @@ console.log(`Кіно: ${this.title}`);
 console.log(`Сценарій: ${this.director}`);
 console.log(`Рік: ${this.year}`);
 console.log(`Оцінка: ${this.rating}`);
+const { title, director, year, rating } = movie;
